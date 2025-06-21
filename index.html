@@ -18,6 +18,12 @@
       background: var(--background);
       color: var(--text);
     }
+    .notification {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
     header {
       background: var(--primary);
       color: white;
@@ -27,7 +33,6 @@
     header h1 {
       margin: 0;
       font-size: 3rem;
-      letter-spacing: 1px;
     }
     header p {
       font-size: 1.3rem;
@@ -61,8 +66,6 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: inline-block;
     }
     .cta a:hover {
       transform: scale(1.03);
@@ -82,11 +85,8 @@
       display: flex;
       flex-direction: column;
     }
-    .contact label {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    .contact input, .contact textarea {
+    .contact input,
+    .contact textarea {
       padding: 0.8rem;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -105,6 +105,18 @@
     .contact button:hover {
       background: var(--secondary);
     }
+    .insta-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .insta-btn a {
+      background-color: #E1306C;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     footer {
       background: var(--primary);
       color: white;
@@ -116,8 +128,7 @@
 </head>
 <body>
 
-  <!-- ✅ Notification Bar -->
-  <div style="background-color: #222; color: #fff; padding: 10px; text-align: center;">
+  <div class="notification">
     🚀 Welcome to Growpli – Helping Local Businesses Grow!
   </div>
 
@@ -126,9 +137,9 @@
     <p>Helping Plumbers, Electricians & Local Pros Grow Online</p>
   </header>
 
-  <section>
-    <h2>What We Do</h2>
-    <p>Growpli is a local marketing service built to help tradespeople like you get more visibility, reviews, and calls online. Whether you're a plumber, electrician, or another local expert, we help your business stand out.</p>
+  <section id="about">
+    <h2>About Growpli</h2>
+    <p>Growpli is a digital marketing solution built to help local businesses grow online through smart strategies, automation, and creative content. Whether you're just starting or scaling up, Growpli is your partner in success.</p>
   </section>
 
   <section class="services">
@@ -141,43 +152,24 @@
     </ul>
   </section>
 
-  <!-- ✅ About Growpli Section -->
-  <section id="about" style="padding: 40px; background-color: #f9f9f9; text-align: center;">
-    <h2>About Growpli</h2>
-    <p>Growpli is a digital marketing solution built to help local businesses grow online through smart strategies, automation, and creative content. Whether you're just starting or scaling up, Growpli is your partner in success.</p>
-  </section>
-
-  <!-- ✅ Instagram Button -->
-  <section style="padding: 20px; text-align: center;">
-    <a href="https://www.instagram.com/growpli.marketing" target="_blank"
-       style="background-color:#E1306C;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;">
-      📸 Follow us on Instagram
-    </a>
-  </section>
-
-  <!-- ✅ Call-to-Action -->
   <section class="cta">
     <h2>Want a Free Visibility Check?</h2>
     <p>Send us a message on Instagram or email us to get started!</p>
     <a href="https://www.instagram.com/growpli.marketing" target="_blank">Message Us on Instagram</a>
   </section>
 
-  <!-- ✅ Contact Form (FormSubmit) -->
-  <section id="contact" class="contact">
+  <div class="insta-btn">
+    <a href="https://www.instagram.com/growpli.marketing" target="_blank">📸 Follow us on Instagram</a>
+  </div>
+
+  <section class="contact">
     <h2>Contact Us</h2>
     <form action="https://formsubmit.co/neyruselmi@gmail.com" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://growpli.com/thanks.html">
-
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -186,5 +178,42 @@
     <p>&copy; 2025 Growpli. All rights reserved.</p>
   </footer>
 
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanks – Growpli</title>
+  <style>
+    body {
+      background-color: #F9FAFB;
+      color: #111827;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #1E293B;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thanks for reaching out!</h1>
+  <p>We'll get back to you shortly.</p>
+  <a href="https://growpli.com">Return to Homepage</a>
 </body>
 </html>
