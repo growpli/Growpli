@@ -204,14 +204,19 @@
       Send
     </button>
   </form>
-
-</section>
 <section id="contact" style="padding: 40px; background-color: #eef2f3; text-align: center;">
   <h2>Contact Us</h2>
-  <form action="https://formsubmit.co/growpli@gmail.com" method="POST">
+  <form action="https://formsubmit.co/neyruselmi@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
     <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-    <textarea name="message" placeholder="Your Message" style="width: 100%; padding: 10px;  margin-bottom: 10px;"></textarea>
+    <textarea name="message" placeholder="Your Message" style="width: 100%; padding: 10px; margin-bottom: 10px;" required></textarea>
+    
+    <!-- Hidden field to disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Optional: Redirect to thank-you page -->
+    <input type="hidden" name="_next" value="https://growpli.com/thanks.html">
+
     <button type="submit" style="padding: 10px 20px; background-color: #222; color: white; border: none; border-radius: 5px;">Send</button>
   </form>
 </section>
