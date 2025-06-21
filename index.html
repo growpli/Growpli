@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,6 +115,12 @@
   </style>
 </head>
 <body>
+
+  <!-- ✅ Notification Bar -->
+  <div style="background-color: #222; color: #fff; padding: 10px; text-align: center;">
+    🚀 Welcome to Growpli – Helping Local Businesses Grow!
+  </div>
+
   <header>
     <h1>Growpli</h1>
     <p>Helping Plumbers, Electricians & Local Pros Grow Online</p>
@@ -136,15 +141,31 @@
     </ul>
   </section>
 
+  <!-- ✅ About Growpli Section -->
+  <section id="about" style="padding: 40px; background-color: #f9f9f9; text-align: center;">
+    <h2>About Growpli</h2>
+    <p>Growpli is a digital marketing solution built to help local businesses grow online through smart strategies, automation, and creative content. Whether you're just starting or scaling up, Growpli is your partner in success.</p>
+  </section>
+
+  <!-- ✅ Instagram Button -->
+  <section style="padding: 20px; text-align: center;">
+    <a href="https://www.instagram.com/growpli.marketing" target="_blank"
+       style="background-color:#E1306C;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;">
+      📸 Follow us on Instagram
+    </a>
+  </section>
+
+  <!-- ✅ Call-to-Action -->
   <section class="cta">
     <h2>Want a Free Visibility Check?</h2>
     <p>Send us a message on Instagram or email us to get started!</p>
-    <a href="https://instagram.com/growpli" target="_blank">Message Us on Instagram</a>
+    <a href="https://www.instagram.com/growpli.marketing" target="_blank">Message Us on Instagram</a>
   </section>
 
-  <section class="contact">
+  <!-- ✅ Contact Form (FormSubmit) -->
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/moqgpbpq" method="POST">
+    <form action="https://formsubmit.co/neyruselmi@gmail.com" method="POST">
       <label for="name">Your Name</label>
       <input type="text" id="name" name="name" required />
 
@@ -154,6 +175,9 @@
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://growpli.com/thanks.html">
+
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -161,62 +185,6 @@
   <footer>
     <p>&copy; 2025 Growpli. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
-<!-- ✅ Notification Bar -->
-<div style="background-color: #222; color: #fff; padding: 10px; text-align: center;">
-  🚀 Welcome to Growpli – Helping Local Businesses Grow!
-</div>
-
-<!-- ✅ Main Website Content (Keep your existing design here) -->
-<div class="main-content">
-  <h1>Welcome to Growpli</h1>
-  <p>Your digital marketing growth partner.</p>
-</div>
-
-<!-- ✅ About Growpli Section -->
-<section id="about" style="padding: 40px; background-color: #f9f9f9; text-align: center;">
-  <h2>About Growpli</h2>
-  <p>Growpli is a digital marketing solution built to help local businesses grow online through smart strategies, automation, and creative content. Whether you're just starting or scaling up, Growpli is your partner in success.</p>
-</section>
-
-<!-- ✅ Instagram Button -->
-<section style="padding: 20px; text-align: center;">
-  <a href="https://www.instagram.com/growpli" target="_blank"
-     style="background-color:#E1306C;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;">
-    📸 Follow us on Instagram
-  </a>
-</section>
-
-<!-- ✅ Contact Form -->
-<section id="contact" style="padding: 40px; background-color: #eef2f3; text-align: center;">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/your-form-id" method="POST"
-        style="max-width:400px;margin:auto;">
-    <input type="text" name="name" placeholder="Your Name" required
-           style="width:100%;padding:10px;margin-bottom:10px;">
-    <input type="email" name="email" placeholder="Your Email" required
-           style="width:100%;padding:10px;margin-bottom:10px;">
-    <textarea name="message" placeholder="Your Message" rows="5" required
-              style="width:100%;padding:10px;margin-bottom:10px;"></textarea>
-    <button type="submit"
-            style="padding:10px 20px;background:#222;color:#fff;border:none;border-radius:5px;">
-      Send
-    </button>
-  </form>
-<section id="contact" style="padding: 40px; background-color: #eef2f3; text-align: center;">
-  <h2>Contact Us</h2>
-  <form action="https://formsubmit.co/neyruselmi@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-    <textarea name="message" placeholder="Your Message" style="width: 100%; padding: 10px; margin-bottom: 10px;" required></textarea>
-    
-    <!-- Hidden field to disable captcha -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <!-- Optional: Redirect to thank-you page -->
-    <input type="hidden" name="_next" value="https://growpli.com/thanks.html">
-
-    <button type="submit" style="padding: 10px 20px; background-color: #222; color: white; border: none; border-radius: 5px;">Send</button>
-  </form>
-</section>
