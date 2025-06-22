@@ -1,97 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growpli | Local Marketing for Plumbers, Electricians & Trades</title>
 
-  <!-- 🔑 SEO: Title & Meta -->
-  <title>Growpli – Local Marketing for Plumbers & Electricians</title>
-  <meta name="description"
-        content="Growpli helps local trades—plumbers, electricians, and other pros—boost visibility online with Google profile optimization, social media, reviews, ads, and more.">
-  <meta name="keywords"
-        content="local marketing, trades marketing, plumber SEO, electrician marketing, Google Business optimization, Growpli">
-  <meta name="author" content="Growpli Marketing">
-
-  <!-- 🔑 SEO: Canonical -->
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Growpli helps local pros like plumbers and electricians grow online with Google optimization, reviews, social content, and more.">
+  <meta name="keywords" content="local marketing, plumber marketing, electrician SEO, growpli, Google Business optimization, trades marketing">
   <link rel="canonical" href="https://growpli.com/">
 
-  <!-- 🔑 Favicon -->
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:title" content="Growpli | Local Marketing for Trades" />
+  <meta property="og:description" content="Get more calls, reviews & visibility. We help local trades grow online." />
+  <meta property="og:image" content="https://growpli.com/assets/og-image.jpg" />
+  <meta property="og:url" content="https://growpli.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Growpli | Local Marketing for Trades" />
+  <meta name="twitter:description" content="We help plumbers and electricians get more business online." />
+  <meta name="twitter:image" content="https://growpli.com/assets/og-image.jpg" />
+
+  <!-- ✅ Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- 🔑 Open Graph (Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="Growpli – Helping Local Pros Grow Online">
-  <meta property="og:description"
-        content="Local marketing made easy for plumbers, electricians, and trades. Get more calls, reviews & customers.">
-  <meta property="og:image" content="https://growpli.com/assets/og-image.jpg"><!-- replace with real image -->
-  <meta property="og:url"   content="https://growpli.com/">
-  <meta property="og:type"  content="website">
-
-  <!-- 🔑 Twitter Card -->
-  <meta name="twitter:card"  content="summary_large_image">
-  <meta name="twitter:title" content="Growpli – Helping Local Pros Grow Online">
-  <meta name="twitter:description"
-        content="Google profile optimization, social posts, reviews & ads for local trades.">
-  <meta name="twitter:image" content="https://growpli.com/assets/og-image.jpg"><!-- replace with real image -->
-
-  <!-- 🔑 Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type":   "LocalBusiness",
-    "name":    "Growpli",
-    "url":     "https://growpli.com",
-    "logo":    "https://growpli.com/assets/logo.png",
-    "description":"Growpli provides digital marketing solutions for plumbers, electricians, and local professionals.",
-    "address": {
-      "@type":"PostalAddress",
-      "addressLocality":"London",
-      "addressCountry":"UK"
-    },
-    "sameAs":[
-      "https://www.instagram.com/growpli.marketing"
-    ]
-  }
-  </script>
-
-  <!-- 💅 Site Styles -->
   <style>
-    :root{
-      --primary:#1E293B;
-      --secondary:#F59E0B;
-      --background:#F9FAFB;
-      --text:#111827;
+    :root {
+      --primary: #1E293B;
+      --secondary: #F59E0B;
+      --background: #F9FAFB;
+      --text: #111827;
     }
-    body{font-family:'Segoe UI',Tahoma,Verdana,sans-serif;margin:0;padding:0;
-         background:var(--background);color:var(--text);}
-    .notification{background:#222;color:#fff;padding:10px;text-align:center}
-    header{background:var(--primary);color:#fff;padding:4rem 2rem 3rem;text-align:center}
-    header h1{margin:0;font-size:3rem;letter-spacing:1px}
-    header p{font-size:1.3rem;margin-top:1rem}
-    section{padding:2rem;max-width:900px;margin:auto}
-    .services ul{list-style:none;padding:0}
-    .services li{margin-bottom:1rem;background:#fff;padding:1.2rem;
-                 border-left:6px solid var(--secondary);
-                 border-radius:6px;box-shadow:0 4px 8px rgba(0,0,0,0.04)}
-    .cta{text-align:center;margin-top:2.5rem}
-    .cta a{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;
-           padding:1rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:bold;
-           transition:transform .2s,box-shadow .2s;display:inline-block}
-    .cta a:hover{transform:scale(1.03);box-shadow:0 8px 20px rgba(17,24,39,.2)}
-    .contact{background:#fff;margin-top:3rem;padding:2rem;border-radius:8px;
-             box-shadow:0 0 12px rgba(0,0,0,0.05)}
-    .contact form{display:flex;flex-direction:column}
-    .contact input,.contact textarea{padding:.8rem;border:1px solid #ccc;
-                                     border-radius:4px;margin-top:.5rem}
-    .contact button{margin-top:1.5rem;background:var(--primary);color:#fff;
-                    padding:.8rem 1.5rem;border:none;border-radius:6px;font-size:1rem;cursor:pointer}
-    .contact button:hover{background:var(--secondary)}
-    footer{background:var(--primary);color:#fff;text-align:center;padding:1.5rem 1rem;margin-top:2rem}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.8rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin-bottom: 1rem;
+      background: white;
+      padding: 1.2rem;
+      border-left: 6px solid var(--secondary);
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    .cta a {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: inline-block;
+    }
+    .cta a:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(17, 24, 39, 0.2);
+    }
+    .contact {
+      background: white;
+      margin-top: 3rem;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+    .contact h2 {
+      margin-top: 0;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+    .contact button {
+      margin-top: 1.5rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: var(--secondary);
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
-
-  <div class="notification">🚀 Welcome to Growpli – Helping Local Businesses Grow!</div>
-
   <header>
     <h1>Growpli</h1>
     <p>Helping Plumbers, Electricians & Local Pros Grow Online</p>
@@ -99,44 +144,45 @@
 
   <section>
     <h2>What We Do</h2>
-    <p>Growpli is a local marketing service built to help tradespeople get more visibility, reviews, and calls online. Whether you're a plumber, electrician, or another local expert, we help your business stand out.</p>
+    <p>Growpli is a local marketing service built to help tradespeople like you get more visibility, reviews, and calls online. Whether you're a plumber, electrician, or another local expert, we help your business stand out.</p>
   </section>
 
   <section class="services">
-    <h2>✅ Starter Package Includes:</h2>
+    <h2>Starter Package Includes:</h2>
     <ul>
       <li>✅ Google Business Profile Optimization</li>
       <li>✅ Review Boost Strategy</li>
       <li>✅ 5 Branded Social Media Posts</li>
       <li>✅ Local Keyword Visibility Report</li>
-      <li>✅ Social Media Page Setup (Facebook, Instagram, etc.)</li>
-      <li>✅ Basic Local Ads Campaign Setup</li>
-      <li>✅ Website Health & Mobile Speed Check</li>
-      <li>✅ Custom ‘Contact Us’ Form Integration</li>
-      <li>✅ Competitor Visibility Snapshot</li>
-      <li>✅ Basic Website Creation (1–3 pages)</li>
+      <li>✅ Facebook/Instagram Page Setup</li>
+      <li>✅ Social Media Ads Starter Setup</li>
+      <li>✅ Business Info Consistency Audit</li>
+      <li>✅ Basic Monthly Progress Report</li>
+      <li>✅ Website Landing Page (Optional)</li>
+      <li>✅ 1-on-1 Strategy Call</li>
     </ul>
   </section>
 
   <section class="cta">
     <h2>Want a Free Visibility Check?</h2>
     <p>Send us a message on Instagram or email us to get started!</p>
-    <a href="https://www.instagram.com/growpli.marketing" target="_blank">📲 Message Us on Instagram</a>
+    <a href="https://instagram.com/growpli.marketing" target="_blank">Message Us on Instagram</a>
   </section>
 
   <section class="contact">
     <h2>Contact Us</h2>
     <form action="https://formsubmit.co/neyruselmi@gmail.com" method="POST">
       <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required />
+
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required />
+
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <!-- disable captcha & keep on page -->
-      <input type="hidden" name="_captcha" value="false">
-      <!-- (no _next means same-page confirmation) -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://growpli.com/" />
 
       <button type="submit">Send Message</button>
     </form>
@@ -145,6 +191,5 @@
   <footer>
     <p>&copy; 2025 Growpli. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
