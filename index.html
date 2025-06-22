@@ -18,12 +18,6 @@
       background: var(--background);
       color: var(--text);
     }
-    .notification {
-      background-color: #222;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
     header {
       background: var(--primary);
       color: white;
@@ -33,6 +27,7 @@
     header h1 {
       margin: 0;
       font-size: 3rem;
+      letter-spacing: 1px;
     }
     header p {
       font-size: 1.3rem;
@@ -66,6 +61,8 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: inline-block;
     }
     .cta a:hover {
       transform: scale(1.03);
@@ -84,6 +81,10 @@
     .contact form {
       display: flex;
       flex-direction: column;
+    }
+    .contact label {
+      margin-top: 1rem;
+      font-weight: bold;
     }
     .contact input,
     .contact textarea {
@@ -105,18 +106,6 @@
     .contact button:hover {
       background: var(--secondary);
     }
-    .insta-btn {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .insta-btn a {
-      background-color: #E1306C;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
     footer {
       background: var(--primary);
       color: white;
@@ -128,20 +117,24 @@
 </head>
 <body>
 
-  <div class="notification">
+  <!-- ✅ Notification Bar -->
+  <div style="background-color: #222; color: #fff; padding: 10px; text-align: center;">
     🚀 Welcome to Growpli – Helping Local Businesses Grow!
   </div>
 
+  <!-- ✅ Header -->
   <header>
     <h1>Growpli</h1>
     <p>Helping Plumbers, Electricians & Local Pros Grow Online</p>
   </header>
 
-  <section id="about">
+  <!-- ✅ About Section -->
+  <section>
     <h2>About Growpli</h2>
     <p>Growpli is a digital marketing solution built to help local businesses grow online through smart strategies, automation, and creative content. Whether you're just starting or scaling up, Growpli is your partner in success.</p>
   </section>
 
+  <!-- ✅ Services Section -->
   <section class="services">
     <h2>Starter Package Includes:</h2>
     <ul>
@@ -152,68 +145,38 @@
     </ul>
   </section>
 
+  <!-- ✅ Instagram CTA -->
   <section class="cta">
     <h2>Want a Free Visibility Check?</h2>
     <p>Send us a message on Instagram or email us to get started!</p>
     <a href="https://www.instagram.com/growpli.marketing" target="_blank">Message Us on Instagram</a>
   </section>
 
-  <div class="insta-btn">
-    <a href="https://www.instagram.com/growpli.marketing" target="_blank">📸 Follow us on Instagram</a>
-  </div>
-
+  <!-- ✅ Contact Form -->
   <section class="contact">
     <h2>Contact Us</h2>
     <form action="https://formsubmit.co/neyruselmi@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <!-- Optional Hidden Fields -->
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://growpli.com/thanks.html">
+
       <button type="submit">Send Message</button>
     </form>
   </section>
 
+  <!-- ✅ Footer -->
   <footer>
     <p>&copy; 2025 Growpli. All rights reserved.</p>
   </footer>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thanks – Growpli</title>
-  <style>
-    body {
-      background-color: #F9FAFB;
-      color: #111827;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #1E293B;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Thanks for reaching out!</h1>
-  <p>We'll get back to you shortly.</p>
-  <a href="https://growpli.com">Return to Homepage</a>
 </body>
 </html>
