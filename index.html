@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,27 @@
   <meta name="twitter:image" content="https://growpli.com/assets/og-image.jpg" />
 
   <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- ✅ Structured Data (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Growpli",
+    "url": "https://growpli.com",
+    "logo": "https://growpli.com/assets/logo.png",
+    "description": "Growpli provides digital marketing for plumbers, electricians & local trades.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "UK"
+    },
+    "sameAs": [
+      "https://www.instagram.com/growpli.marketing"
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -137,6 +158,7 @@
 </head>
 <body>
   <header>
+    <img src="assets/logo.png" alt="Growpli logo" width="80" />
     <h1>Growpli</h1>
     <p>Helping Plumbers, Electricians & Local Pros Grow Online</p>
   </header>
