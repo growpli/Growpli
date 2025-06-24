@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Growpli | Pricing</title>
+  <title>Pricing | Growpli</title>
   <style>
     :root {
       --primary: #1E293B;
@@ -12,119 +12,129 @@
       --text: #111827;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--background);
-      color: var(--text);
       margin: 0;
       padding: 0;
-    }
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 2.5rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
+      background: var(--background);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
     }
     section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
     }
-    h2 {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
       color: var(--primary);
-      font-size: 1.8rem;
     }
-    .plan, .service {
+    p.intro {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: #4B5563;
+    }
+    .plan, .services {
       background: white;
       padding: 1.5rem;
       border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
       margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    ul {
-      padding-left: 1.2rem;
+    .plan ul {
+      padding-left: 1rem;
+      line-height: 1.8;
     }
-    li {
-      margin-bottom: 0.8rem;
-    }
-    .price {
-      font-size: 1.2rem;
+    .price-tag {
       font-weight: bold;
-      color: var(--secondary);
+      color: var(--primary);
+      margin-top: 1rem;
+      display: inline-block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 1rem;
     }
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 1rem;
+    table th, table td {
+      text-align: left;
+      padding: 0.75rem;
+      border-bottom: 1px solid #E5E7EB;
+    }
+    table th {
+      background: #F3F4F6;
+      color: var(--primary);
+    }
+    a.back {
+      display: inline-block;
       margin-top: 2rem;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
       text-decoration: none;
+      color: var(--primary);
       font-weight: bold;
+    }
+    a.back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Growpli Pricing</h1>
-  <p>Transparent. Simple. Designed for Local Trades.</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pricing.html">Pricing</a>
-  </nav>
-</header>
+  <section>
+    <h1>Pricing</h1>
+    <p class="intro">Simple, transparent pricing for local trades. No contracts. No hidden fees.</p>
 
-<section>
-  <div class="plan">
-    <h2>📦 Monthly Marketing Plan – £300/month</h2>
-    <p>This all-in-one plan is built for plumbers, electricians, and local trades who want consistent visibility and more calls without doing the marketing themselves.</p>
-    <ul>
-      <li>✅ Google Business Profile Management</li>
-      <li>✅ Review Boost Strategy</li>
-      <li>✅ 5 Branded Social Media Posts per Month</li>
-      <li>✅ Facebook/Instagram Page Setup</li>
-      <li>✅ Keyword Visibility Report</li>
-      <li>✅ Website (One Page)</li>
-      <li>✅ Monthly Progress Report</li>
-      <li>✅ 1-on-1 Strategy Call</li>
-      <li>✅ Email Support</li>
-    </ul>
-    <p class="price">Only £300 per month — Cancel anytime</p>
-  </div>
+    <div class="plan">
+      <h2>Monthly Marketing Plan – £300</h2>
+      <ul>
+        <li>Google Business Profile Management</li>
+        <li>Review Boost Strategy</li>
+        <li>5 Branded Social Media Posts per Month</li>
+        <li>Facebook/Instagram Page Setup</li>
+        <li>Keyword Visibility Report</li>
+        <li>Website (One Page)</li>
+        <li>Monthly Progress Report</li>
+        <li>1-on-1 Strategy Call</li>
+        <li>Email Support</li>
+      </ul>
+      <span class="price-tag">£300/month – Cancel anytime</span>
+    </div>
 
-  <div class="service">
-    <h2>🛠️ Per-Service Pricing</h2>
-    <p>Need help with something specific? Choose from our one-time services below:</p>
-    <ul>
-      <li>✅ Google Business Profile Setup – <strong>£125</strong></li>
-      <li>✅ Website (One Page) – <strong>£99</strong></li>
-      <li>✅ Facebook/Instagram Ad Setup – <strong>£110</strong></li>
-      <li>✅ 5 Branded Social Media Posts – <strong>£95</strong></li>
-      <li>✅ Review Boost Strategy Setup – <strong>£85</strong></li>
-      <li>✅ Local Keyword Visibility Report – <strong>£80</strong></li>
-    </ul>
-    <p class="price">One-time payments — no ongoing commitment</p>
-  </div>
-</section>
+    <div class="services">
+      <h2>One-Time Services</h2>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Google Business Profile Setup</td>
+          <td>£125</td>
+        </tr>
+        <tr>
+          <td>Website (One Page)</td>
+          <td>£99</td>
+        </tr>
+        <tr>
+          <td>Facebook/Instagram Ad Setup</td>
+          <td>£110</td>
+        </tr>
+        <tr>
+          <td>5 Branded Social Media Posts</td>
+          <td>£95</td>
+        </tr>
+        <tr>
+          <td>Review Boost Strategy Setup</td>
+          <td>£85</td>
+        </tr>
+        <tr>
+          <td>Local Keyword Visibility Report</td>
+          <td>£80</td>
+        </tr>
+      </table>
+      <span class="price-tag">Flat fees – Pay only for what you need</span>
+    </div>
 
-<footer>
-  <p>&copy; 2025 Growpli. All rights reserved.</p>
-</footer>
+    <a href="index.html" class="back">← Back to Home</a>
+  </section>
 
 </body>
 </html>
